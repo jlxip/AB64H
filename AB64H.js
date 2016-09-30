@@ -2,7 +2,7 @@
 // @name AB64H
 // @description Auto BASE64 Hangouts
 // @namespace AB64H
-// @version 0.1.3
+// @version 0.1.3.1
 // @include https://mail.google.com/*
 
 // @require http://code.jquery.com/jquery-git.min.js
@@ -51,7 +51,8 @@ function run() {
 	});
 }
 
-document.keypress(function(evt) {
+var search = $('input[dir="ltr"]');
+search.keypress(function(evt) {
 	evt = evt || window.event;
 	var charCode = evt.keyCode || evt.which;
 	if(charCode==170) {
