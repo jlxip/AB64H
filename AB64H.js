@@ -2,7 +2,7 @@
 // @name AB64H
 // @description Auto BASE64 Hangouts
 // @namespace AB64H
-// @version 0.1.2
+// @version 0.1.3
 // @include https://mail.google.com/*
 
 // @require http://code.jquery.com/jquery-git.min.js
@@ -51,6 +51,11 @@ function run() {
 	});
 }
 
-var run_button = document.createElement("BUTTON");	// Botón para lanzar el script
-run_button.appendChild(document.createTextNode("RUN AB64H"));	// Establecemos el texto
-document.body.appendChild(run_button);	// Y lo mostramos TODO: MEJORAR
+document.keypress(function(evt) {
+	evt = evt || window.event;
+	var charCode = evt.keyCode || evt.which;
+	if(charCode==170) {
+		run();
+		return false;
+	}
+});
