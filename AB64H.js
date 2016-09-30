@@ -3,7 +3,7 @@
 // @description Auto BASE64 Hangouts
 // @namespace AB64H
 // @version 0.1
-// @include https://mail.google.com
+// @include https://mail.google.com/*
 
 // @require http://code.jquery.com/jquery-git.min.js
 // @require https://greasyfork.org/scripts/23618-jsaes/code/JSAES.js?version=150018
