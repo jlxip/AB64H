@@ -1,3 +1,1 @@
-Auto BASE64 Hangouts is a script made in JavaScript which allows encrypted chatting in Hangouts.
-
-TODO: IMPROVE THIS
+Página del script: https://greasyfork.org/es/scripts/23620-ab64h
