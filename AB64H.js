@@ -3,7 +3,7 @@
 // @description Auto BASE64 Hangouts
 // @author JlXip
 // @namespace AB64H
-// @version 1.0.0-RC2
+// @version 1.0.0-RC3
 // @include https://hangouts.google.com/webchat/*
 
 // @require http://code.jquery.com/jquery-git.min.js
