@@ -44,7 +44,9 @@ function AB64H_keypress(evt) {  // Función que se ejecutará cada vez que se pu
                 var encoded=atob(bencoded); // Lo decodificamos de BASE64 para obtener los bytes limpios
                 var decoded=AESW_decryptLongString(encoded, key);   // Decodificamos el mensaje
                 $(this).html(decoded);  // Y lo cambiamos en el documento HTML
-                oneChanged = true;  // Cambiamos el valor de la variable booleana para saber que al menos se ha descifrado un mensaje
+                if(msginput.html() === "") {    // Si no se ha introducido nada en el campo de entrada del mensaje...
+                   oneChanged = true;  // Cambiamos el valor de la variable booleana para saber que al menos se ha descifrado un mensaje y que no hay que encriptar nada
+                }
             }
         });
 
